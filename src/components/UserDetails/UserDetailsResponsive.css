@@ -42,16 +42,67 @@
 @media screen and (max-width:500px) {
     .top-section {
         padding: 2rem 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    .top-section>.basic-detail-b {
+        max-width: 90%;
+        font-size: 1rem;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .repos-section>.repo-cards {
+        width: 90%;
+        
+    }
+    .repos-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .top-section>.basic-detail-a {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-left: 0;
+        gap: 15px;
+        padding: 2rem 0;
     }
 
     .repos-section>h2 {
-        margin-left: 3%;
+        margin-left: 0;
         text-align: left;
         font-weight: 400;
+    }
+    .repos-section>.repo-cards>.repo-card>span {
+        width: 100%;
+        text-align: left;
+        padding: 0 0;
+    }
+    .repos-section>.repo-cards>.repo-card>.topics {
+        margin-top: 10px;
+        width: 100%;
+        text-align: left;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
     }
 
     .repos-section>.repo-cards>.repo-card {
         width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .top-section>.basic-detail-a>img {
