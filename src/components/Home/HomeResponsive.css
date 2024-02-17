@@ -1,0 +1,172 @@
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    #main {
+        padding: 3rem 0 0 0 ;
+    }
+
+    #search-bar {
+        padding: 0rem 0 ;
+    }
+
+    .user-profile {
+        padding: 5px 10px ;
+        margin-top: 2rem ;
+    }
+
+    .user-profile>img {
+        width: 60px ;
+        height: 60px ;
+    }
+
+    #main>h1:nth-child(1) {
+        font-size: 2.2rem ;
+    }
+
+    #main>h1 {
+        font-size: 1.5rem ;
+    }
+
+    #search-bar>h2 {
+        font-size: 1.2rem ;
+    }
+
+    .user-profile>.user-name-repo {
+        padding: 10px 20px ;
+    }
+
+    .user-profile>.user-name-repo>span:nth-child(1) {
+        font-size: 1.2rem ;
+    }
+
+    #search-bar>.input-form>input {
+        width: 45% ;
+    }
+
+    #search-bar>.input-form>button {
+        right: 24% ;
+    }
+
+    .user-profile>.user-bio {
+        width: 40% ;
+    }
+
+    nav>span {
+        color: #000000 ;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    #main {
+        padding: 2rem 0 0 0 ;
+    }
+
+    #main>h1:nth-child(1) {
+        font-size: 1.6rem ;
+    }
+
+    #main>h1 {
+        font-size: 1.2rem ;
+    }
+
+    #search-bar>h2 {
+        font-size: 1rem ;
+    }
+
+    #search-bar {
+        gap: 2rem ;
+    }
+
+    #search-bar>.input-form>input {
+        width: 55% ;
+    }
+
+    #search-bar>.input-form>button {
+        right: 19% ;
+    }
+
+    #search-bar>.input-form>input::placeholder {
+        font-size: 1rem ;
+    }
+
+    .user-profile>.user-bio {
+        width: 30% ;
+        font-size: 1rem;
+    }
+
+    .user-profile>img {
+        width: 40px ;
+        height: 40px ;
+    }
+
+    .user-profile>.user-name-repo>span:nth-child(1) {
+        font-size: 1rem ;
+    }
+
+    .user-profile>.user-bio>span {
+        font-size: 1rem ;
+    }
+    nav>span {
+        position: absolute;
+        right: 1rem ;
+        color: #000000 ;
+        font-size: 1rem ;
+    }
+    nav>.history {
+        right: 1rem ;
+        top: 3.5rem ;
+    }
+    nav>img {
+        height: 40px ;
+        width: auto;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .user-profile {
+        display: flex;
+        justify-content: flex-start ;
+        flex-direction: column;
+        align-items: flex-start ;
+        margin-top: 0rem ;
+    }
+
+    .user-profile>.user-name-repo {
+        padding: 10px 0 ;
+    }
+
+    .user-profile>.user-bio {
+        position: absolute;
+        right: 10px;
+        top: 65%;
+        transform: translate(10%, -50%);
+        text-align: left;
+        width: 50%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 1rem;
+    }
+    #search-bar>.input-form>button {
+        right: 16%;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .user-profile>.user-bio {
+        position: relative ;
+        left: 0 ;
+        top: 0 ;
+        transform: translate(0, 0) ;
+        text-align: left;
+        width: 100% ;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 1rem;
+    }
+    #search-bar>.input-form>button {
+        right: 14%;
+    }
+    
+}

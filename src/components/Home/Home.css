@@ -1,0 +1,228 @@
+#home {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url('../images/bg.svg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+}
+nav {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    position: relative;
+}
+
+nav>img {
+    height: 50px;
+    width: auto;
+}
+
+nav>span {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-family: "Barlow", system-ui;
+    font-weight: 100;
+    cursor: pointer;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(31, 38, 135, 0.37);
+}
+
+nav>span:hover {
+    color: #e0e0e0;
+}
+
+nav>.history {
+    position: absolute;
+    right: 1.5rem;
+    top: 2.5rem;
+    font-size: 1rem;
+    font-family: "Protest Strike", system-ui;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    display: none;
+    flex-direction: column;
+    padding: 5px !important;
+}
+
+nav>.history>li {
+    padding: 10px 15px;
+    list-style: none;
+    text-align: left;
+    border-radius: 5px;
+}
+
+nav>.history>li:hover {
+    background-color: #d7d7d7;
+}
+
+nav>.history>li>a {
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav>.history>li>a>img {
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+
+}
+
+.toggle-history {
+    display: flex !important;
+}
+
+#main {
+    width: 100%;
+    padding: 6rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#main>h1 {
+    width: 80%;
+    font-size: 1.8rem;
+    font-family: "Bangers", system-ui;
+    font-weight: 300;
+}
+
+#main>h1:nth-child(1) {
+    font-size: 2.5rem;
+}
+
+#main>h1:nth-child(1)>span {
+    color: #018ccf;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#search-bar>h2 {
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: "Bangers", system-ui;
+    font-weight: 300;
+}
+
+#search-bar>.input-form {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-bar>.input-form>input {
+    width: 40%;
+    padding: 1rem 40px 1rem 20px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1.2rem;
+    border: none;
+    background: #becbe800;
+    box-shadow: inset 5px 5px 20px #bfbfbf, 
+                inset -5px -5px 20px #aebee200;
+}
+#search-bar>.input-form>input::placeholder{
+    font-weight: 300;
+    font-family: "Bangers", system-ui;
+}
+#search-bar>.input-form>button {
+    position: absolute;
+    right: 28%;
+    padding: 0.5rem 10px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    display: flex;
+}
+
+#search-bar>.input-form>button:hover {
+    cursor: pointer;
+}
+
+.user-profile {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.user-profile:hover {
+    background-color: #e1e1e1;
+    scale: 1.02;
+}
+
+.user-profile>img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.user-profile>.user-name-repo {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.user-profile>.user-name-repo>span:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.user-profile>.user-name-repo>span:nth-child(2) {
+    font-size: 1rem;
+}
+
+.user-profile>.user-bio {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(-10px, -50%);
+    text-align: left;
+
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1rem;
+}
+
+.user-profile>.user-bio>span {
+    font-size: 1.2rem;
+    display: inline-flex;
+    width: 100%;
+    font-weight: 600;
+}

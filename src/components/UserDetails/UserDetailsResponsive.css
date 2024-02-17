@@ -1,0 +1,81 @@
+@media screen and (max-width:767px) {
+    .top-section {
+        padding: 2rem 5%;
+    }
+
+    .repos-section>h2 {
+        margin-left: 3%;
+        text-align: left;
+        font-weight: 400;
+    }
+
+    .repos-section>.repo-cards>.repo-card {
+        width: 90%;
+    }
+
+    .top-section>.basic-detail-a>img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .top-section>.basic-detail-a>span>h1 {
+        font-size: 1.5rem;
+    }
+
+    .top-section>.basic-detail-a>span>span {
+        font-size: 1rem;
+    }
+
+    .top-section>.basic-detail-b {
+        font-size: 1rem;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .top-section>.basic-detail-b>span {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .top-section {
+        padding: 2rem 5%;
+    }
+
+    .repos-section>h2 {
+        margin-left: 3%;
+        text-align: left;
+        font-weight: 400;
+    }
+
+    .repos-section>.repo-cards>.repo-card {
+        width: 90%;
+    }
+
+    .top-section>.basic-detail-a>img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .top-section>.basic-detail-a>span>h1 {
+        font-size: 1.2rem;
+    }
+
+    .top-section>.basic-detail-a>span>span {
+        font-size: 1rem;
+    }
+
+    .top-section>.basic-detail-b {
+        font-size: 1rem;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .top-section>.basic-detail-b>span {
+        font-size: 1.5rem;
+    }
+}
